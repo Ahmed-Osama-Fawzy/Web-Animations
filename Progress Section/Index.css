@@ -1,0 +1,28 @@
+.Section{
+    width: 100%;
+    height: 100vh;
+    background-color: rgb(233, 175, 175);
+    color: black;
+    margin: 20px auto;
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+    gap: 150px;
+}
+.prog{
+    width: 80%;
+    height:50px ;
+    background-color:red ;
+    position: relative;
+    border-radius: 20px;
+}
+.prog span{
+    position: absolute;
+    height: 100%;
+    background-color: black;
+    left: 0;
+    top: 0;
+    transition: width 2s linear;
+    border-radius: 20px;
+}
+        

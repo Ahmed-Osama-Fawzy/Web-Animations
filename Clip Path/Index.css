@@ -1,0 +1,36 @@
+.c1 {
+    height: 200px;
+    width: 200px;
+    background-color: black;
+    clip-path: circle(70px at 0 0);
+}
+.c2 {
+    height: 200px;
+    width: 200px;
+    background-color: red;
+    clip-path: circle(70px at 50% 50%);
+}
+.c3 {
+    height: 200px;
+    width: 200px;
+    background-color: blue;
+    clip-path: circle(70px at 100% 100%);
+}
+.t1 {
+    height: 200px;
+    width: 200px;
+    background-color: green;
+    clip-path:polygon(50% 0% , 100% 0% , 100% 100%);
+}
+.t2 {
+    height: 200px;
+    width: 200px;
+    background-color: yellow;
+    clip-path: polygon(100% 50% , 50% 0% , 50% 100%);
+}
+.t3 {
+    height: 200px;
+    width: 200px;
+    background-color: violet;
+    clip-path: polygon(100% 100% , 100% 0% , 0% 100%);
+}

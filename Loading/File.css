@@ -1,0 +1,37 @@
+body {
+    padding: 0;
+    margin: 0;
+}
+div {
+    width: 100%;
+    height: 881px;
+    color: rgb(0, 136, 255);
+    background-color: black;
+}
+div span{
+    font-size: 100px;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50% , -50%);
+    mix-blend-mode: difference;
+}
+div span::before {
+    content: "";
+    position: absolute;
+    left: 0;
+    top: 0;
+    height: 20%;
+    width: 100%;
+    background-color: rgb(71, 54, 54);
+    animation: Moving 3s linear infinite;
+    z-index: -1;
+}
+@keyframes Moving {
+    0% , 100%{
+        top: 0;
+    }
+    50%{
+        top:100% ;
+    }
+}

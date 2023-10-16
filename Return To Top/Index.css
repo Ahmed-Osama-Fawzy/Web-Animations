@@ -1,0 +1,12 @@
+button {
+    position: fixed;
+    right: 10px;
+    bottom: 10px;
+    background-color: black;
+    color: white;
+    padding: 5px;
+    border-radius: 100%;
+    cursor: pointer;
+    user-select: none;
+    display: none;
+}

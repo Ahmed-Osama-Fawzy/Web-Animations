@@ -1,0 +1,39 @@
+section {
+    width: 500px;
+    height: 500px;
+    padding: 20px;
+    margin: 10px auto;
+}
+div{
+    padding: 10px;
+    font-size: x-large;
+}
+
+input[type="radio"] {
+    -webkit-appearance: none;
+}
+label {
+    position: relative;
+    padding-left: 45px;
+}
+input[type="radio"]:checked + label {
+    color: blueviolet;
+}
+label::before {
+    content: "";
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 25px;
+    height:25px;
+    border: 3px solid blueviolet;
+}
+input[type="radio"]:checked + label::after {
+    content: "";
+    position: absolute;
+    top: 5px;
+    left: 5px;
+    width: 20px;
+    height:20px;
+    background-color: blueviolet;
+}

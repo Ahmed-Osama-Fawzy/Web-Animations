@@ -1,0 +1,11 @@
+body {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: cornflowerblue;
+}
+h1 {
+    padding: 10px;
+    color: black;
+    display: inline-block;
+}

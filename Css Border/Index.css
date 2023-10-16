@@ -1,0 +1,26 @@
+h1 {
+    color: cadetblue;
+    background-color: black;
+    padding: 10px;
+    margin: 50px auto ;
+    width: fit-content;
+    position: relative;
+}
+h1::before {
+    content: "";
+    border-color:  rgb(63, 63, 63) rgb(63, 63, 63) transparent transparent;
+    border-width: 10px;
+    border-style: solid;
+    position: absolute;
+    bottom: -20px;
+    left: 0;
+}
+h1::after {
+    content: "";
+    border-color: transparent transparent   rgb(63, 63, 63)  rgb(63, 63, 63);
+    border-width: 10px;
+    border-style: solid;
+    position: absolute;
+    top: -20px;
+    right: 0;
+}

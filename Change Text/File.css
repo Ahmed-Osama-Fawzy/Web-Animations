@@ -1,0 +1,35 @@
+.Loading {
+    position: relative;
+    display: block;
+    text-align: center;
+    margin: 10px auto;
+    border: 3px red solid;
+    padding: 10px;
+    font-size: 30px;
+    width: 200px;
+    height: 50px;
+    overflow: hidden;
+}
+.Loading::before {
+    content: attr(data-text);
+    position: absolute;
+    bottom: -100%;
+    left: 0;
+    color: black;
+    width: 100%;
+    transition: 1s;
+}
+.Loading span {
+    position: absolute;
+    bottom: 30%;
+    left: 0;
+    color: black;
+    width: 100%;
+    transition: 2s;
+}
+.Loading:hover:before{
+    bottom: 30%;
+}
+.Loading:hover > span{
+    transform: translateX(-100%);
+}

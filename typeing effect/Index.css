@@ -1,0 +1,28 @@
+h1 {
+    width: fit-content;
+    height:40px;
+    background-color: cadetblue;
+    color: white;
+    position: relative;
+    animation:copy 3s 1s steps(15) both;
+    white-space: nowrap;
+    margin: 50px auto;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+}
+h1::after {
+    content: "";
+    position: absolute;
+    width: 3px;
+    height: 100%;
+    right: 0;
+    top: 0;
+    background-color: black;
+}
+@keyframes copy {
+    from {
+        width: 0;
+    }
+    to {
+        width: 300px;
+    }
+}
